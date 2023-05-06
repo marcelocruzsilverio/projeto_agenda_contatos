@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Contatos</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./images/phone-logo.png" alt="logo de um telefone azul" />
+        <h1>Lista de Contatos</h1>
+      </header>
+      <form id="contact-data">
+        <input type="text" id="contact-name" placeholder="Nome" required />
+        <input
+          type="tel"
+          id="contact-phone"
+          placeholder="Digite o DDD + o telefone"
+          required
+        />
+        <button type="submit">Cadastrar</button>
+      </form>
+      <table cellspacing="0" id="contact-list">
+        <thead>
+          <tr>
+            <th class="name">Nome</th>
+            <th>Telefone</th>
+          </tr>
+        </thead>
+        <tbody id="content-list"></tbody>
+        <tfoot>
+          <tr>
+            <td class="name">Telefones cadastrados:</td>
+            <td><span id="contact-total">---</span></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
